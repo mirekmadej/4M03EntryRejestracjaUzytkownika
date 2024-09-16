@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M03EntryRejestracjaUzytkownika.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="rejestracja konta"
+                FontSize="48"
+                />
+            <HorizontalStackLayout>
+                <Label
+                    Text="imię:*"
+                    WidthRequest="120"
+                    />
+                <Entry
+                    Placeholder="podaj imię"
+                    x:Name="enImie"
+                    WidthRequest="120"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                    Text="nazwisko:*"
+                    WidthRequest="120"
+                    />
+                <Entry
+                    Placeholder="podaj nazwisko"
+                    x:Name="enNazwisko"
+                    WidthRequest="120"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                    Text="emil:*"
+                    WidthRequest="120"
+                    />
+                <Entry
+                    Placeholder="podaj emila"
+                    x:Name="enEmail"
+                    WidthRequest="120"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                    Text="hasło:*"
+                    WidthRequest="120"
+                    />
+                <Entry
+                    Placeholder="podaj hasło"
+                    x:Name="enHaslo1"
+                    WidthRequest="120"
+                    IsPassword="True"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                    Text="powtórz hasło:*"
+                    WidthRequest="120"
+                    />
+                <Entry
+                    Placeholder="powtórz hasło"
+                    x:Name="enHaslo2"
+                    WidthRequest="120"
+                    IsPassword="True"
+                    />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Utwórz konto"
+                Clicked="onBtnClicked"
+                />
+            <Label
+                Text="wynik"
+                x:Name="lblWynik"
+                />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
